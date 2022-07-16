@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap");
+
+@font-face {
+  font-family: "Cerebri Sans";
+  src: local("CereberiSansSemiBold"),
+    url(../public/fonts/CerebriSansSemiBold.ttf) format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cerebri Sans";
+  font-weight: 500;
+}
+p {
+  font-size: 15px;
+  color: #696969;
+  line-height: 30px;
+}
+p.lead {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+section {
+  padding: 5rem 0;
+}
+
+.btn {
+  background: #096bd8;
+  border: medium none;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 15px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  font-family: "Cerebri Sans";
+  span {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #0850a1;
+    color: white;
+  }
+  &--outline {
+    background-color: transparent;
+    border: 2px solid white;
+    &:hover {
+      border-color: #0850a1;
+    }
+  }
+}
+
+.section-title {
+  font-size: 2.8125rem;
+}
+.form {
+  font-family: inherit;
+  .form-control {
+    background-color: transparent;
+    font-family: inherit;
+    &:focus {
+      background-color: #00000096;
+      color: white;
+    }
+  }
+}
+
+.navbar {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-bottom: 2px solid #2d2d2d;
+
+  &-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-item {
+    .navbar-link {
+      color: white;
+    }
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url(../public/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  h1.title {
+    font-size: 4.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1;
+  }
+  p {
+    color: white;
+    max-width: 80%;
+  }
+}
+
+.about {
+  .cards-container {
+    margin-top: 4rem;
+  }
+  .service-card {
+    text-align: center;
+  }
+}
+
+.stats {
+  background-color: #096bd8;
+  color: white;
+  &-cards-container {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 1rem;
+  }
+}
+// cta
+.cta {
+  padding: 10rem 0;
+  background-image: url(../public/images/cta-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+// contact
+.contact {
+  // padding: 10rem 0;
+  background-image: url(../public/images/cta-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  .section-title-box * {
+    color: white !important;
+  }
+}
+// footer
+.footer {
+  background-color: #f8f8f8;
+}
+// components
+.service-card {
+  .icon {
+    width: 6.25rem;
+    height: auto;
+  }
+  &-title {
+    font-size: 1.5rem;
+  }
+  .btn--outline {
+    color: #096bd8;
+    border: 2px solid #ececec;
+  }
+}
+
+.stats-card {
+  &-icon {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 0.2rem;
+  }
+  &-title {
+    color: white;
+  }
+  &-count {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
+.section-title-box {
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: center;
+  .section-suptitle {
+    color: #096bd8;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 4rem;
+      background-color: #096bd8;
+    }
+
+    &::before {
+      margin-right: 1rem;
+    }
+    &::after {
+      margin-left: 1rem;
+    }
+  }
+  .section-title {
+    font-size: 2.8125rem;
+    margin-bottom: 2rem;
+    span {
+      color: #096bd8;
+    }
+  }
+  .section-subtitle {
+  }
+}
