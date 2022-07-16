@@ -9,7 +9,7 @@ const Contact = () => {
         supTitle=" CONTACT US "
       />
       <Container>
-        <Form>
+        <Form className="contact-form">
           <Row>
             <Col xs="12" sm="6">
               <FormGroup>
@@ -25,7 +25,7 @@ const Contact = () => {
             </Col>
             <Col xs="12">
               <FormGroup>
-                <Label for="message">Text Area</Label>
+                <Label for="message">Message</Label>
                 <Input type="textarea" name="message" id="message" />
               </FormGroup>
             </Col>
