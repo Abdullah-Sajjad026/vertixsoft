@@ -19,7 +19,7 @@ const Hero: FC = (): JSX.Element => {
     <div className="hero d-flex flex-column">
       <header>
         <Navbar className="navbar" dark expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Vertix Soft</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -48,8 +48,12 @@ const Hero: FC = (): JSX.Element => {
             illo inventore veritatis
           </p>
           <div className="d-flex mt-5">
-            <button className="btn">Learn More</button>
-            <button className=" ms-3 btn btn--outline">Contact Us </button>
+            <a href="#about" className="btn">
+              Learn More
+            </a>
+            <a href="#contact" className=" ms-3 btn btn--outline">
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
