@@ -95,7 +95,7 @@ section {
   padding: 1rem 3%;
   font-size: 1.2rem;
   background-color: transparent;
-  border-bottom: 2px solid #2d2d2d;
+  border-bottom: 0.1px solid #38ade536;
 
   &-collapse {
     flex-grow: 0;
@@ -110,11 +110,26 @@ section {
 
 .hero {
   min-height: 100vh;
-  background-image: url(../public/images/hero-bg.jpg);
+  background: linear-gradient(
+      to bottom left,
+      rgb(3 28 56 / 71%),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../public/images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 0,
+    100% 83%,
+    75% 92%,
+    17% 97%,
+    0 89%,
+    0 0
+  );
 
   h1.title {
     font-size: 4.3rem;
